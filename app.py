@@ -21,7 +21,8 @@ def uploading():
             return "선택되지 않음"
         else:
             code = padding(6, str(hex(random.randint(0, 16**6-1)))[2:]).upper()
-
+            if not os.isdir(storage):
+                os.mkdir(storage)
             os.mkdir(storage + code)
 
             for file in files:
