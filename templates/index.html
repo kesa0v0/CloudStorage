@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link Shortener</title>
+</head>
+<body>
+    <form style="background-color: #f1f1f1; border: 1px solid #d4d4d4;" action="/upload" method="post"
+    enctype="multipart/form-data">
+        <p>Sending</p>
+        <p>File : <input type="file" name="file[]" multiple></p>
+        <p><input type="submit"></p>
+    </form>
+    <form style="background-color: #f1f1f1; border: 1px solid #d4d4d4;" action="/download" method="post">
+        <p>Receiving</p>
+        <p>Code : <input type="text" name="code"></p>
+        <p><input type="submit"></p>
+    </form>
+</body>
+</html>
